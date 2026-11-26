@@ -29,7 +29,7 @@ export default function SubscribeModal({
                   return;
             }
 
-            // 실제 구독 API 연결 위치
+            // 구독 API 연결 위치
             console.log('구독 신청:', email);
             alert('구독 API 연결이 필요합니다.');
       }
@@ -62,15 +62,11 @@ export default function SubscribeModal({
 
                         <div className={styles.profileImage}>
                               <img
-                                    src="/images/veryus-hero.jpg"
-                                    alt="베리어스 공연 이미지"
+                                    src="/images/veryus_logo.jpg"
+                                    alt="베리어스공연이미지"
                               />
                         </div>
-
-                        <h2 id="subscribe-title">
-                              veryus_ 구독하기
-                        </h2>
-
+                        <h2 id="subscribe-title">베리어스 구독하기</h2>
                         <p className={styles.description}>
                               중요한 소식을 빠르게 만나보세요!
                         </p>
@@ -84,7 +80,6 @@ export default function SubscribeModal({
                                     aria-label="이메일 주소"
                                     required
                               />
-
                               <button
                                     type="submit"
                                     className={styles.submitButton}
@@ -99,10 +94,7 @@ export default function SubscribeModal({
                                           checked={agreed}
                                           onChange={(e) => setAgreed(e.target.checked)}
                                     />
-
-                                    <span>
-                                          [필수] 개인정보 수집 및 이용과 광고성 정보 수신 동의
-                                    </span>
+                                    <span>[필수] 개인정보 수집 및 이용과 광고성 정보 수신 동의</span>
                               </label>
                         </form>
                   </section>
